@@ -169,7 +169,7 @@ function esPositivo(numero) {
     return false;
   }
   else {
-    return Math.sign(numero) === 1 ? 'Es Positivo' : 'Es Negativo';
+    return Math.sign(numero) === 1 ? 'Es positivo' : 'Es negativo';
   }
 }
 
@@ -238,15 +238,15 @@ function esVocal(letra){
   //Escribe tu código aquí
   
   if (letra.length > 1) {
-    return 'Dato Incorrecto: Presente una sola letra.'
+    return 'Dato incorrecto'
   } 
   
   var arrVocales = ['a', 'á', 'e', 'é', 'i', 'í', 'o', 'ó', 'u', 'ú']; 
 
   if (arrVocales.includes(letra.toLowerCase())) {
-    return 'Es Vocal';
+    return 'Es vocal';
   } else {
-    return 'Dato Incorrecto: El caracter no es vocal.';
+    return 'Dato incorrecto';
   }
 }
 
