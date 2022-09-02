@@ -54,7 +54,7 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
 
-  var resultado = "This is " + color;
+  let resultado = "This is " + color;
 
   switch (color) {
     case 'blue': case 'red': case 'green': case 'orange':
@@ -113,7 +113,7 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-  for (var x = 0; x < arguments.length; x++) {
+  for (let x = 0; x < arguments.length; x++) {
     if (Math.sign(arguments[x]) === -1) return "Hay negativos";
     if (arguments[x] === 0) return "Error";
   }
@@ -152,9 +152,9 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
 
-  var arrTabla = []; 
+  let arrTabla = []; 
   
-  for (var multi = 0; multi <= 10; multi++) {
+  for (let multi = 0; multi <= 10; multi++) {
     arrTabla.push(6 * multi);
   }
 
