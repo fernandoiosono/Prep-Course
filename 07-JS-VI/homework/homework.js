@@ -68,9 +68,7 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
 
-  let nuevoArray = array.filter(function(element) {
-    if (element[0] === "a") return element;
-  });
+  let nuevoArray = array.filter(element => element[0] === "a");
 
   return nuevoArray;
 }
